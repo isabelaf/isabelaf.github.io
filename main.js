@@ -120,11 +120,21 @@ function readMoreLess(id)
 	}
 }
 
-function highlight(className)
+function highlight(element, className)
 {
 	var show, hide;
 	
-	if (className === '')
+	if (!className)
+		return;
+
+	var keyWordLinks = document.getElementsByClassName('keyword-link');
+	for (var i = 0; i < keyWordLinks.length; i++)
+	{
+		keyWordLinks[i].classList.remove('active');
+	}
+	element.classList.add('active');
+	
+	if (className === 'all')
 	{
 		show = document.querySelectorAll('.app');
 	}

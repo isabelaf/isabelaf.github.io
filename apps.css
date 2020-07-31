@@ -138,6 +138,16 @@
 	cursor: pointer;
 }
 
+.keyword-link.active
+{
+	color: green;
+}
+
+.keyword-link.not
+{
+	cursor: initial !important;
+}
+
 .keyword
 {
 	color: rgba(0, 77, 0, 1);
@@ -172,15 +182,10 @@
 		color: rgba(0, 77, 0, 0.7);
 	}
 	
-	.keyword-link:hover
+	.keyword-link:not(.not):hover
 	{
 		color: green;
 		transform: scale(1.3);
-	}
-	
-	.not:hover
-	{
-		color: grey;
 	}
 }
 
