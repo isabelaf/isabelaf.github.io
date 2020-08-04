@@ -1,15 +1,13 @@
 /** navigation bar **/
 
-#home-navbar
-{
+#home-navbar {
 	position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#home-navbar .navbar-item
-{
+#home-navbar .navbar-item {
 	font-size: 150%;
 	width: 10em;
 	display: block;
@@ -22,8 +20,7 @@
 
 /** Home **/
 
-#home-content
-{
+#home-content {
 	position: relative;
 	min-height: 100vh;
 	min-width: 100vw;
@@ -33,18 +30,14 @@
 
 /** responsive **/
 
-@media screen and (max-width: 800px)
-{
-	#home-navbar .navbar-item
-	{
+@media screen and (max-width: 800px) {
+	#home-navbar .navbar-item {
 		width: 50vw;
 	}
 }
 
-@media screen and (max-width: 500px)
-{
-	#home-navbar .navbar-item
-	{
+@media screen and (max-width: 500px) {
+	#home-navbar .navbar-item {
 		width: 90vw;
 		height: 4em;
 		margin: 0.25em auto;
@@ -53,10 +46,8 @@
 	}
 }
 
-@media screen and (max-height: 450px)
-{
-	#home-navbar .navbar-item:first-child
-	{
+@media screen and (max-height: 450px) {
+	#home-navbar .navbar-item:first-child {
 		margin-top: 5em;
 	}
 }

@@ -1,19 +1,17 @@
 /** Info **/
 
-.grid
-{
+.grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	align-items: center;
 }
 
-#self-photo
-{
-	background-image: url("./self_photo.jpg");
+#self-photo {
+	background-image: url("../images/self-photo.jpg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	border: solid 3px transparent;
-	border-image-source: url("./self_photo_border.png");
+	border-image-source: url("../images/self-photo-border.png");
 	border-image-slice: 30%;
 	border-image-width: 40;
 	border-image-repeat: round;
@@ -25,31 +23,26 @@
 	margin: 0 auto;
 }
 
-.section
-{
+.section {
 	border: solid 1px white;
 	border-radius: 5px;
 }
 
-.section p
-{
+.section p {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height .5s ease-in;
 }
 
-.section .title
-{
+.section .title {
 	display: inline;
 }
 
-.section:target > p
-{
+.section:target > p {
 	max-height: 10em;
 }
 
-.section .untarget
-{
+.section .untarget {
   position: absolute;
   top: 0;
   width: 100%;
@@ -57,29 +50,24 @@
   display: none;
 }
 
-.section:target .untarget
-{
+.section:target .untarget {
   display: block;
 }
 
-.section-title
-{
+.section-title {
 	display: inline-block;
 	position: relative;
 }
 
-.section-title-arrow
-{
+.section-title-arrow {
 	transition: .5s;
 }
 
-:target .section-title-arrow
-{
+:target .section-title-arrow {
 	transform: rotate(-180deg);
 }
 
-.contact-icon
-{
+.contact-icon {
 	font-size: 1.5em;
 	margin: 0.3em;
 	transition: opacity .5s, transform .5s;
@@ -89,20 +77,16 @@
 
 /* hover animations */
 
-@media (hover: hover)
-{
-	.contact-icon:hover
-	{
+@media (hover: hover) {
+	.contact-icon:hover {
 		opacity: 0.7;
 	}
 
-	.social-media:hover
-	{
+	.social-media:hover {
 		transform: scale(1.5);
 	}
 
-	.map-pin:hover
-	{
+	.map-pin:hover {
 		transform: rotate(360deg);
 	}
 }
@@ -111,18 +95,14 @@
 
 /** responsive **/
 
-@media screen and (max-width: 800px)
-{
-	.grid
-	{
+@media screen and (max-width: 800px) {
+	.grid {
 		grid-template-columns: 1fr;
 	}
 }
 
-@media screen and (max-width: 500px)
-{
-	#self-photo
-	{
+@media screen and (max-width: 500px) {
+	#self-photo {
 		padding-top: 80%;
 		width: 80%;
 	}

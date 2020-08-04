@@ -1,22 +1,17 @@
-window.onscroll = () =>
-{
+window.onscroll = () => {
 	var toTop = document.getElementById('to-top');
 	
 	if (toTop === null)
 		return;
 	
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
-	{
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		toTop.style.display = 'initial';
-	}
-	else
-	{
+	} else {
 		toTop.style.display = 'none';
 	}
 }
 
-function thumbnailAnimation(id, count)
-{
+function thumbnailAnimation(id, count) {
 	var currentImg = 0;
 	var el = document.getElementById(id);
 	
@@ -26,27 +21,23 @@ function thumbnailAnimation(id, count)
 	
 	el.addEventListener(
 		'mouseleave',
-		function()
-		{
+		() => {
 			clearInterval(timer);
-			el.style.backgroundImage = 'url("./Apps/' + id + '_thumbnail_0.jpg' + '")';
+			el.style.backgroundImage = 'url("./images/apps/' + id + '-thumbnail-0.jpg' + '")';
 		},
 		false
 	);
 	
-	function changeImage()
-	{
-		if (currentImg === count - 1)
-		{
+	function changeImage() {
+		if (currentImg === count - 1) {
 			currentImg = -1;
 		}
 		
-		el.style.backgroundImage = 'url("./Apps/' + id + '_thumbnail_' + (++currentImg).toString() + '.jpg' + '")';
+		el.style.backgroundImage = 'url("./images/apps/' + id + '-thumbnail-' + (++currentImg).toString() + '.jpg' + '")';
 	}
 }
 
-function showModal(id, count)
-{
+function showModal(id, count) {
 	document.getElementsByTagName('body')[0].style.overflow = 'hidden';
 	
 	document.getElementById('modal').style.display = 'block';
@@ -55,20 +46,18 @@ function showModal(id, count)
 	var modalPhoto = document.getElementById('modal-photo');
 	var modalPage = document.getElementById('modal-page');
 	
-	modalPhoto.style.backgroundImage = 'url("./Apps/' + id + '_0.jpg' + '")';
+	modalPhoto.style.backgroundImage = 'url("./images/apps/' + id + '-0.jpg' + '")';
 	modalPage.innerHTML = '1 / ' + count.toString();
 	
 	var currentImg = 0;
 	
 	document.getElementById('next').addEventListener(
 		'click',
-		function()
-		{
-			if (currentImg === count - 1)
-			{
+		function() {
+			if (currentImg === count - 1) {
 				currentImg = -1;
 			}
-			modalPhoto.style.backgroundImage = 'url("./Apps/' + id + '_' + (++currentImg).toString() + '.jpg' + '")';
+			modalPhoto.style.backgroundImage = 'url("./images/apps/' + id + '-' + (++currentImg).toString() + '.jpg' + '")';
 			modalPage.innerHTML = (currentImg + 1).toString() + ' / ' + count.toString();
 		},
 		false
@@ -76,41 +65,34 @@ function showModal(id, count)
 	
 	document.getElementById('prev').addEventListener(
 		'click',
-		function()
-		{
-			if (currentImg === 0)
-			{
+		function() {
+			if (currentImg === 0) {
 				currentImg = count;
 			}
-			modalPhoto.style.backgroundImage = 'url("./Apps/' + id + '_' + (--currentImg).toString() + '.jpg' + '")';
+			modalPhoto.style.backgroundImage = 'url("./images/apps/' + id + '-' + (--currentImg).toString() + '.jpg' + '")';
 			modalPage.innerHTML = (currentImg + 1).toString() + ' / ' + count.toString();
 		},
 		false
 	);
 }
 
-function closeModal()
-{
+function closeModal() {
 	document.getElementsByTagName('body')[0].style.overflow = 'initial';
 	document.getElementById('modal').style.display = 'none';
 }
 
-function readMoreLess(id)
-{
+function readMoreLess(id) {
 	var readMoreLessButton = document.querySelector('#' + id + ' + .app-info .read-more-less');
 	var readMoreLessText = document.querySelector('#' + id + ' + .app-info .read-more-less p');
 	
-	if (readMoreLessText.innerHTML === 'Read more')
-	{
+	if (readMoreLessText.innerHTML === 'Read more') {
 		readMoreLessText.innerHTML = 'Read less';
 		
 		readMoreLessButton.style.position = 'initial';
 		readMoreLessButton.style.width = '100%';
 		
 		document.querySelector('#' + id + ' + .app-info').style.maxHeight = '10em';
-	}
-	else
-	{
+	} else {
 		readMoreLessText.innerHTML = 'Read more';
 		
 		readMoreLessButton.style.position = 'absolute';
@@ -120,26 +102,22 @@ function readMoreLess(id)
 	}
 }
 
-function highlight(element, className)
-{
+function highlight(element, className) {
 	var show, hide;
 	
 	if (!className)
 		return;
 
 	var keyWordLinks = document.getElementsByClassName('keyword-link');
-	for (var i = 0; i < keyWordLinks.length; i++)
-	{
+	for (var i = 0; i < keyWordLinks.length; i++) {
 		keyWordLinks[i].classList.remove('active');
 	}
 	element.classList.add('active');
 	
-	if (className === 'all')
-	{
+	if (className === 'all') {
 		show = document.querySelectorAll('.app');
 	}
-	else
-	{
+	else {
 		hide = document.querySelectorAll('.app:not(.' + className + ')');
 		show = document.querySelectorAll('.' + className);
 	}
@@ -147,12 +125,10 @@ function highlight(element, className)
 	if (show.length === 0)
 		return;
 		
-	for (var i = 0; i < show.length; i++)
-	{
+	for (var i = 0; i < show.length; i++) {
 		show[i].style.display = 'initial';
 	}
-	for (var i = 0; i < hide.length; i++)
-	{
+	for (var i = 0; i < hide.length; i++) {
 		hide[i].style.display = 'none';
 	}
 }
