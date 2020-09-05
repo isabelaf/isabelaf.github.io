@@ -1,0 +1,25 @@
+{
+  "photo": "",
+  "about": "[about]",
+  "contact": {
+    "socialMedia": [
+      {
+        "url": "https://www.linkedin.com/in/isabela-fitero",
+        "iconClass": "fab fa-linkedin contact-icon social-media"
+      },
+      {
+        "url": "https://github.com/isabelaf",
+        "iconClass": "fab fa-github contact-icon social-media"
+      },
+      {
+        "url": "mailto:isabelafitero@gmail.com",
+        "iconClass": "fas fa-envelope contact-icon social-media"
+      }
+    ],
+    "address": [
+      "https://www.google.com/maps/place/Isabela+Island,+Ecuador/@-0.4401097,-91.18721,9z/data=!4m2!3m1!1s0x9aab62c5ee008911:0x608b574da68123e5",
+      "https://www.google.com/maps/place/Isabela,+Puerto+Rico/@18.4456606,-67.0131726,12z/data=!3m1!4b1!4m2!3m1!1s0x8c02955bd66a651b:0x7c505c4987546705",
+      "https://www.google.com/maps/place/Rio+Isabela,+Santo+Domingo,+Dominican+Republic/@18.5170993,-69.9311816,15z/data=!4m2!3m1!1s0x8eaf8973328a86c9:0x6cef50e3cca9485e"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html ng-app="isaApp">
+
+	<head>
+		<title>{{title}}</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="libs/back-to-top/back-to-top.style.css">
+		<link rel="stylesheet" href="app.style.css">
+
+		<base href="/">
+	</head>
+
+	<body>
+		<a class="btn btn-dark" back-to-top><i class="fas fa-long-arrow-alt-up"></i></a>
+
+		<navbar></navbar>
+
+		<div class="container vh-100 bg-secondary text-light position-relative px-0 pt-5">
+			<div class="body-content px-4">
+				<div ng-view></div>
+			</div>
+
+			<div class="footer mb-5 px-2">
+				<hr class="bg-light"/>
+				<footer>
+					Isabela Fitero &copy; 2020.
+				</footer>
+			</div>
+		</div>
+
+		<!-- #region scripts -->
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular-route/angular-route.min.js"></script>
+
+		<script src="lib/jquery/dist/jquery.min.js"></script>
+		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<script src="libs/navbar-active/navbar-active.js"></script>
+		<script src="libs/back-to-top/back-to-top.js"></script>
+
+		<script src="app.js"></script>
+		<script src="navbar/navbar.component.js"></script>
+		<script src="home/home.js"></script>
+		<script src="projects/projects.js"></script>
+		<!-- #endregion -->
+
+	</body>
+
+</html>

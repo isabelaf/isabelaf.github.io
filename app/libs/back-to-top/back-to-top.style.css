@@ -1,0 +1,9 @@
+.back-to-top {
+	z-index: 2;
+	display: none;
+	bottom: 0;
+	position: fixed;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	transition: transform .5s;
+}
