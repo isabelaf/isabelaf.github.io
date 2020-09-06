@@ -1,0 +1,52 @@
+$body-bg: #dee2e6;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './variables';
+
+.bg-gray-300 {
+  background-color: $gray-400;
+}
+
+.navbar-theme {
+  @extend .navbar-expand-lg;
+  @extend .sticky-top;
+
+  background-color: $navbar-theme-background;
+
+  .navbar-brand {
+    color: $navbar-theme-brand;
+
+    :hover {
+      color: $navbar-theme-hover;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      :hover {
+        color: $navbar-theme-hover;
+      }
+    }
+    
+    .nav-link {
+      color: $navbar-theme-element;
+
+      :hover {
+        color: $navbar-theme-hover;
+      }
+    }
+
+    .active > .nav-link {
+      color: $navbar-theme-active;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-theme-background;
+    border-color: $navbar-theme-element;
+  }
+
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-theme-toggler-icon);
+  }
+}
