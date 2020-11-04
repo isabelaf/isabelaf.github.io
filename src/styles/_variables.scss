@@ -1,0 +1,15 @@
+$theme-color-dark: $gray-900;
+$theme-color-light: $gray-400;
+$theme-text-dark: $gray-900;
+$theme-text-light: $white;
+
+$navbar-theme-bg: $theme-color-dark;
+$navbar-theme-hover: rgba($white, .75);
+$navbar-theme-active: $white;
+$navbar-theme-brand: $white;
+$navbar-theme-element: rgba($white, .5);
+$navbar-theme-toggler-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-theme-element}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+
+$btn-theme-bg: $theme-color-dark;
+$btn-theme-text: $theme-color-light;
+$btn-theme-hover: rgba($btn-theme-bg, .75);

@@ -1,0 +1,32 @@
+<!-- <a class="btn btn-theme" back-to-top><i class="fas fa-long-arrow-alt-up"></i></a> -->
+
+<nav id="navbar" class="navbar navbar-theme">
+  <div class="container">
+    <a class="navbar-brand" href="home"><i class="fas fa-moon"></i></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarElements" aria-controls="navbarElements" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarElements">
+      <ul class="navbar-nav ml-auto">
+        <li *ngFor="let e of elements" class="nav-item">
+          <a class="nav-link" routerLink="{{e.href}}" routerLinkActive="active">{{e.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container container-theme">
+  <div class="body-content px-4">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="footer-theme">
+    <hr />
+    <footer>
+      Isabela Fitero &copy; 2020.
+    </footer>
+  </div>
+</div>
