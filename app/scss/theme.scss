@@ -1,17 +1,12 @@
-$body-bg: #dee2e6;
-
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import './variables';
-
-.bg-gray-300 {
-  background-color: $gray-400;
+body {
+  background-color: $theme-color-light;
 }
 
 .navbar-theme {
   @extend .navbar-expand-lg;
   @extend .sticky-top;
 
-  background-color: $navbar-theme-background;
+  background-color: $navbar-theme-bg;
 
   .navbar-brand {
     color: $navbar-theme-brand;
@@ -42,11 +37,39 @@ $body-bg: #dee2e6;
   }
 
   .navbar-toggler {
-    color: $navbar-theme-background;
+    color: $navbar-theme-bg;
     border-color: $navbar-theme-element;
   }
 
   .navbar-toggler-icon {
     background-image: escape-svg($navbar-theme-toggler-icon);
   }
+}
+
+.container-theme {
+  @extend .vh-100;
+  @extend .position-relative;
+  @extend .px-0;
+  @extend .pt-5;
+
+  color: $theme-text-dark;
+}
+
+.footer-theme {
+  @extend .mb-5;
+  @extend .px-2;
+
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  hr {
+    background-color: $theme-color-dark;
+  }
+}
+
+.btn-theme {
+  background-color: $btn-theme-bg;
+  color: $btn-theme-text;
 }

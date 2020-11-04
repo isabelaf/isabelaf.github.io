@@ -2,6 +2,7 @@
 
 const app = angular.module('isaApp', [
   'ngRoute',
+  'ngSanitize',
   'navbarActive',
   'backToTop'
 ]);

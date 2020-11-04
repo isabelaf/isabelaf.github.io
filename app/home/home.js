@@ -19,6 +19,11 @@ angular.module('isaApp')
     self.init = function () {
       HomeService.getDetails().then(function (response) {
         self.details = response.data;
+        formatAboutText();
       });
+    }
+
+    function formatAboutText() {
+      self.details.about = self.details.about.replace('\r\n', '<br>');
     }
   });

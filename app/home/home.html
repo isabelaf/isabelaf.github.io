@@ -7,24 +7,23 @@
 
   <div class="col-sm-6">
     <div id="details-accordion">
-      <div class="card bg-secondary">
+      <div class="card">
         <div class="card-header" id="about">
           <h5 class="mb-0">
-            <button class="btn text-light" data-toggle="collapse" data-target="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">
+            <button class="btn" data-toggle="collapse" data-target="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">
               About
             </button>
           </h5>
         </div>
         <div id="collapseAbout" class="collapse" aria-labelledby="about" data-parent="#details-accordion">
-          <div class="card-body">
-            {{vm.details.about}}
+          <div class="card-body" ng-bind-html="vm.details.about">
           </div>
         </div>
       </div>
-      <div class="card bg-secondary">
+      <div class="card">
         <div class="card-header" id="contact">
           <h5 class="mb-0">
-            <button class="btn text-light" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
+            <button class="btn" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
               Contact
             </button>
           </h5>
@@ -33,12 +32,12 @@
           <div class="card-body">
             You can find me on:<br />
             <a ng-repeat="sm in vm.details.contact.socialMedia" target="_blank" href="{{sm.url}}" class="text-decoration-none">
-              <i class="{{sm.iconClass}} text-light"></i>
+              <i class="{{sm.iconClass}} icon social-media"></i>
             </a>
             <br />
             You can also find me here:<br />
             <a ng-repeat="a in vm.details.contact.address" target="_blank" href="{{a}}" class="text-decoration-none">
-              <i class="fas fa-map-marker-alt contact-icon map-pin text-light"></i>
+              <i class="fas fa-map-marker-alt icon map-pin"></i>
             </a>
           </div>
         </div>

@@ -7,8 +7,8 @@ const concat = require('gulp-concat');
 sass.compiler = require('node-sass');
  
 gulp.task('sass', () => {
-  return gulp.src('./app/scss/*.scss')
+  return gulp.src('./app/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(concat('app.css'))
+    .pipe(concat('app.style.css'))
     .pipe(gulp.dest('./app'));
 });
