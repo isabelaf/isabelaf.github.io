@@ -29,10 +29,10 @@ body {
       :hover {
         color: $navbar-theme-hover;
       }
-    }
 
-    .nav-link .active {
-      color: $navbar-theme-active;
+      &.active {
+        color: $navbar-theme-active;
+      }
     }
   }
 

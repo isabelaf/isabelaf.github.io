@@ -16,8 +16,7 @@
           </h5>
         </div>
         <div id="collapseAbout" class="collapse" aria-labelledby="about" data-parent="#details-accordion">
-          <div class="card-body">
-            {{details.about}}
+          <div class="card-body" [innerHtml]="details.about.text">
           </div>
         </div>
       </div>

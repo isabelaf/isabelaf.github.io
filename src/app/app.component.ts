@@ -3,12 +3,14 @@ import { Title } from '@angular/platform-browser';
 import { NavigationEnd, Router, ActivatedRoute } from '@angular/router';
 import { filter, map } from 'rxjs/operators';
 
+import { Element } from './models/element.model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
-  elements = [];
+  elements: Element[] = [];
 
   public constructor(private titleService: Title, private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -17,17 +19,14 @@ export class AppComponent implements OnInit {
     this.elements = [
       {
         path: '/home',
-        href: '/home',
         name: 'Home',
       },
       {
         path: '/projects',
-        href: '/projects',
         name: 'Projects',
       },
       {
         path: '/portofolio',
-        href: '/portofolio',
         name: 'Portofolio',
       }
     ];
