@@ -37,12 +37,8 @@ body {
   }
 
   .navbar-toggler {
-    color: $navbar-theme-bg;
+    color: $navbar-theme-element;
     border-color: $navbar-theme-element;
-  }
-
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-theme-toggler-icon);
   }
 }
 
