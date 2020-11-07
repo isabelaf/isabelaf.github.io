@@ -11,14 +11,14 @@ body {
   .navbar-brand {
     color: $navbar-theme-brand;
 
-    :hover {
+    &:hover {
       color: $navbar-theme-hover;
     }
   }
 
   .navbar-nav {
     .nav-item {
-      :hover {
+      &:hover {
         color: $navbar-theme-hover;
       }
     }
@@ -26,7 +26,7 @@ body {
     .nav-link {
       color: $navbar-theme-element;
 
-      :hover {
+      &:hover {
         color: $navbar-theme-hover;
       }
 
@@ -61,7 +61,7 @@ body {
 
   text-align: center;
   width: 100%;
-  position: absolute;
+  // position: absolute;
   bottom: 0;
 
   hr {
@@ -72,4 +72,27 @@ body {
 .btn-theme {
   background-color: $btn-theme-bg;
   color: $btn-theme-text;
+}
+
+.card-theme {
+  border: none;
+}
+
+.card-header-theme {
+  background-color: $theme-color-dark;
+
+  .btn {
+    color: $theme-text-light;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.card-body-theme {
+  border: 2px solid $theme-color-dark;
+  background-color: $theme-color-light;
+  color: $theme-text-dark;
 }

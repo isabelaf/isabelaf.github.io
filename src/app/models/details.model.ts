@@ -14,7 +14,6 @@ export class DetailsContact {
 }
 
 export class Details {
-    photo: string;
     about: DetailsAbout;
     contact: DetailsContact
 }

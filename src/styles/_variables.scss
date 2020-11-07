@@ -3,8 +3,10 @@ $theme-color-light: $gray-400;
 $theme-text-dark: $gray-900;
 $theme-text-light: $white;
 
+$font-size-ex-lg: $font-size-base * 1.5 !default;
+
 $navbar-theme-bg: $theme-color-dark;
-$navbar-theme-hover: rgba($white, .75);
+$navbar-theme-hover: hover-color($white);
 $navbar-theme-active: $white;
 $navbar-theme-brand: $white;
 $navbar-theme-element: rgba($white, .5);
@@ -12,4 +14,4 @@ $navbar-theme-toggler-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.or
 
 $btn-theme-bg: $theme-color-dark;
 $btn-theme-text: $theme-color-light;
-$btn-theme-hover: rgba($btn-theme-bg, .75);
+$btn-theme-hover: hover-color($btn-theme-bg);

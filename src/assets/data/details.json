@@ -1,8 +1,7 @@
 {
-    "photo": "",
     "about": {
       "birthdate": "1998-11-26T00:00:00+0000",
-      "text": "Hello! Name's Isabela and I'm {0} years old (on Mars).\r\nAs you can probably tell, I like autumn. <span class=\"cat-emoji\">And cats.<\/span>\r\nI am a first year Software Engineering masters student at BBU of Cluj-Napoca, Romania, and I am here to learn new things and do my best."
+      "text": "Hello! Name's Isabela and I'm {0} years old (on Mars).\r\nAs you can probably tell, I like autumn. And cats.\r\nI am a first year Software Engineering masters student at BBU of Cluj-Napoca, Romania, and I am here to learn new things and do my best."
     },
     "contact": {
       "socialMedia": [

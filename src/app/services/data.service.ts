@@ -4,10 +4,11 @@ import { Observable } from 'rxjs';
 
 import * as moment from 'moment';
 
-import { Details } from './models/details.model';
+import { AppConstants } from '../app.constants';
+import { Details } from '../models/details.model';
 
 @Injectable()
-export class AppService {
+export class DataService {
   constructor(private httpClient: HttpClient) {
   };
 
@@ -16,8 +17,7 @@ export class AppService {
   };
 
   calculateAgeOnMarts(birthdate: Date): number {
-    const marsYearDays = 687;
     const daysOnEarth = moment().diff(birthdate, 'days');
-    return Math.floor(daysOnEarth / marsYearDays);
+    return daysOnEarth / AppConstants.marsYearDays;
   }
 }
