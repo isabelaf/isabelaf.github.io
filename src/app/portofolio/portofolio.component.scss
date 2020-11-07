@@ -1,0 +1,10 @@
+div {
+    margin-left: 15%;
+    width: 70%;
+    max-height: 90vh;
+    overflow-y: scroll;
+
+    pdf-viewer {
+        display: block;
+    }
+}
