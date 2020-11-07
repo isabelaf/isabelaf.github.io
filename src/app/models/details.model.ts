@@ -1,19 +1,19 @@
 export class DetailsAbout {
-    birthdate: Date;
-    text: string;
+  birthdate: Date;
+  text: string;
 }
 
 export class DetailsSocialMedia {
-    url: string;
-    iconClass: string;
+  url: string;
+  iconClass: string;
 }
 
 export class DetailsContact {
-    socialMedia: DetailsSocialMedia[];
-    address: string[];
+  socialMedia: DetailsSocialMedia[];
+  address: string[];
 }
 
 export class Details {
-    about: DetailsAbout;
-    contact: DetailsContact
+  about: DetailsAbout;
+  contact: DetailsContact
 }

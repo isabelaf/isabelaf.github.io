@@ -11,10 +11,10 @@ import { Details } from '../models/details.model';
 export class HomeComponent implements OnInit {
   details: Details = new Details();
 
-  constructor(private appService: DataService) {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.appService.getDetails().subscribe(
+    this.dataService.getDetails().subscribe(
       details => {
         this.details = details;
         this.formatAboutText();
@@ -24,6 +24,6 @@ export class HomeComponent implements OnInit {
 
   private formatAboutText(): void {
     this.details.about.text = this.details.about.text.replaceAll('\r\n', '<br>');
-    this.details.about.text = this.details.about.text.replace('{0}', this.appService.calculateAgeOnMarts(this.details.about.birthdate).toFixed(1));
+    this.details.about.text = this.details.about.text.replace('{0}', this.dataService.calculateAgeOnMarts(this.details.about.birthdate).toFixed(1));
   }
 }

@@ -1,0 +1,47 @@
+[
+    {
+       "name": "ChatApplication",
+       "description": "",
+       "technologies": [
+          "C++",
+          "Qt"
+       ],
+       "gitHubRepo": "https://github.com/isabelaf/ChatApplication"
+    },
+    {
+       "name": "FightGame",
+       "description": "",
+       "technologies": [
+          "C#",
+          "Unity"
+       ],
+       "gitHubRepo": "https://github.com/isabelaf/GD_Assessment"
+    },
+    {
+       "name": "FlyAdventure",
+       "description": "",
+       "technologies": [
+          "C#",
+          "Windows Forms"
+       ],
+       "gitHubRepo": "https://github.com/isabelaf/FlyAdventure"
+    },
+    {
+       "name": "Website (v1)",
+       "description": "",
+       "technologies": [
+          "HTML, CSS & JavaScript"
+       ],
+       "gitHubRepo": "https://isabelaf.github.io/_v1/index.html"
+    },
+    {
+       "name": "Website (v2)",
+       "description": "",
+       "technologies": [
+          "Angular2+",
+          "Bootstrap",
+          "SCSS"
+       ],
+       "gitHubRepo": ""
+    }
+ ]
