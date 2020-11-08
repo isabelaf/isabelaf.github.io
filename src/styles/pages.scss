@@ -1,0 +1,35 @@
+app-home {
+    .icon {
+        @extend .m-2;
+        font-size: $font-size-ex-lg;
+        color: $theme-color-dark;
+        transition: opacity $transition-time, transform $transition-time;
+    }
+
+    @media (hover: hover) {
+        .icon:hover {
+            opacity: $hover-opacity;
+        }
+
+        .social-media:hover {
+            transform: scale(1.5);
+        }
+
+        .map-pin:hover {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+app-portofolio {
+    .pdf-viewer-container {
+        max-height: 90vh;
+        overflow-y: auto;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    pdf-viewer {
+        display: block;
+    }
+}

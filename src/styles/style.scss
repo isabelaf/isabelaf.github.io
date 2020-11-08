@@ -1,8 +1,13 @@
+// Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-@import './functions';
-@import './icons';
 @import './variables';
+@import './functions';
+@import './colors';
+@import './icons';
 @import './helpers';
 
 @import './theme.scss';
+
+// Pages
+@import './pages.scss';

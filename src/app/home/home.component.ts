@@ -5,8 +5,7 @@ import { Details } from '../models/details.model';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
   details: Details = new Details();

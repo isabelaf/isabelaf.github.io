@@ -1,17 +1,4 @@
-$theme-color-dark: $gray-900;
-$theme-color-light: $gray-400;
-$theme-text-dark: $gray-900;
-$theme-text-light: $white;
-$theme-color-element: rgba($white, .5);
+$font-size-ex-lg: $font-size-base * 1.5;
 
-$font-size-ex-lg: $font-size-base * 1.5 !default;
-
-$navbar-theme-bg: $theme-color-dark;
-$navbar-theme-hover: hover-color($white);
-$navbar-theme-active: $white;
-$navbar-theme-brand: $white;
-$navbar-theme-element: $theme-color-element;
-
-$btn-theme-bg: $theme-color-dark;
-$btn-theme-text: $theme-color-light;
-$btn-theme-hover: hover-color($btn-theme-bg);
+$hover-opacity: .75;
+$transition-time: .5s;

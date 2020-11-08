@@ -1,5 +1,5 @@
 @function hover-color($color) {
-  @return rgba($color, .75);
+  @return rgba($color, $hover-opacity);
 }
 
 @function get-icon($icn-name) {
