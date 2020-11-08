@@ -1,6 +1,7 @@
 export class Project {
   name: string;
   description: string;
-  technologies: string[];
-  gitHubRepo: string;
+  implementation: string[];
+  gitRepo: string;
+  data: Map<string, string>
 }
