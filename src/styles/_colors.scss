@@ -10,6 +10,6 @@ $navbar-theme-active: $white;
 $navbar-theme-brand: $white;
 $navbar-theme-element: $theme-color-element;
 
-$btn-theme-bg: $theme-color-dark;
-$btn-theme-text: $theme-color-light;
-$btn-theme-hover: hover-color($btn-theme-bg);
+$btn-primary-theme-bg: $theme-color-dark;
+$btn-primary-theme-text: $theme-color-light;
+$btn-primary-theme-bg-hover: hover-color($btn-primary-theme-bg);

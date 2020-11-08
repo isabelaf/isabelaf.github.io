@@ -1,3 +1,11 @@
+.go-top-btn {
+    @extend .mb-3;
+    @extend .ml-3;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
 app-home {
     .icon {
         @extend .m-2;

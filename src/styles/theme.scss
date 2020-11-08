@@ -66,8 +66,24 @@ body {
 }
 
 .btn-theme {
-  background-color: $btn-theme-bg;
-  color: $btn-theme-text;
+  @extend .btn;
+
+  min-width: $font-size-base * 2.5;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-primary-theme {
+  background-color: $btn-primary-theme-bg;
+  color: $btn-primary-theme-text;
+
+  &:hover {
+    background-color: $btn-primary-theme-bg-hover;
+    color: $btn-primary-theme-text;
+  }
 }
 
 .card-theme {
@@ -77,13 +93,8 @@ body {
 .card-header-theme {
   background-color: $theme-color-dark;
 
-  .btn {
+  .btn-theme {
     color: $theme-text-light;
-
-    &:focus {
-      outline: none;
-      box-shadow: none;
-    }
   }
 }
 

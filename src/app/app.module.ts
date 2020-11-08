@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';  
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { GoTopButtonModule } from 'ng-go-top-button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,8 +31,10 @@ import { PortofolioComponent } from './portofolio/portofolio.component';
     BrowserModule,
     CommonModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     PdfViewerModule,
-    AppRoutingModule,
+    GoTopButtonModule,
+    AppRoutingModule
   ],
   providers: [
     DataService
