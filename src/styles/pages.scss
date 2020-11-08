@@ -42,6 +42,26 @@ app-portofolio {
     }
 }
 
+app-projects {
+    .technology {
+        @extend .mr-5;
+
+        color: #003e80;
+
+        &:hover {
+            color: hover-color(#003e80);
+        }
+
+        &.active {
+            font-weight: 900;
+
+            &:hover {
+                color: #003e80;
+            }
+        }
+    }
+}
+
 app-empty-page {
     .empty-page-container {
         @extend .d-flex;

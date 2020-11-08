@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { EmptyPageComponent } from './empty-page/empty-page.component';
 import { HomeComponent } from './home/home.component';
 import { PortofolioComponent } from './portofolio/portofolio.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
   {
@@ -18,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: 'projects',
-    component: EmptyPageComponent,
+    component: ProjectsComponent,
     data: { title: 'Projects' }
   },
   {

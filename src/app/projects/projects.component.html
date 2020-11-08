@@ -1,0 +1,12 @@
+<ul class="list-inline">
+  <li class="list-inline-item">
+    <button class="btn-theme technology" [ngClass]="{'active': showAllTechnologies}" (click)="selectAllTechnologies()">
+      all
+    </button>
+  </li>
+  <li *ngFor="let t of technologies" class="list-inline-item">
+    <button class="btn-theme technology" [ngClass]="{'active': t.isSelected}" (click)="selectUnselectTechnology(t)">
+      {{t.name}}
+    </button>
+  </li>
+</ul>
