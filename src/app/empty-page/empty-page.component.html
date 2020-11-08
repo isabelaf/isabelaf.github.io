@@ -1,4 +1,4 @@
-<div *ngIf="!isValidRoute" class="d-flex flex-column align-items-center">
+<div *ngIf="!isValidRoute" class="empty-page-container">
   <h1 class="text-danger">
     404
   </h1>
@@ -6,6 +6,6 @@
     Page not found!
   </h2>
 </div>
-<div *ngIf="isValidRoute" class="d-flex flex-column align-items-center">
-  <h1>Work in progress...</h1>
+<div *ngIf="isValidRoute" class="empty-page-container">
+  <h1>Work in progress. <i class="fas fa-pencil-ruler"></i></h1>
 </div>

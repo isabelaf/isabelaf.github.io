@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';  
 import { HttpClientModule } from '@angular/common/http';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -26,6 +27,7 @@ import { PortofolioComponent } from './portofolio/portofolio.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     HttpClientModule,
     PdfViewerModule,
     AppRoutingModule,

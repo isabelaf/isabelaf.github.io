@@ -1,4 +1,4 @@
 <div class="pdf-viewer-container">
-  <pdf-viewer [src]="src" [page]="'page'" [original-size]="false"
-[show-all]="true" [render-text]="false"></pdf-viewer>
+  <pdf-viewer id ="pdf-viewer" [src]="src" [page]="'page'" [original-size]="false"
+[show-all]="true" [render-text]="true" (text-layer-rendered)="textLayerRendered()"></pdf-viewer>
 </div>

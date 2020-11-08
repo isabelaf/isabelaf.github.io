@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   private formatAboutText(): void {
-    this.details.about.text = this.details.about.text.replaceAll('\r\n', '<br>');
+    this.details.about.text = this.details.about.text.replace(/\r\n/g, '<br>');
     this.details.about.text = this.details.about.text.replace('{0}', this.dataService.calculateAgeOnMarts(this.details.about.birthdate).toFixed(1));
   }
 }

@@ -33,3 +33,11 @@ app-portofolio {
         display: block;
     }
 }
+
+app-empty-page {
+    .empty-page-container {
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .align-items-center;
+    }
+}
