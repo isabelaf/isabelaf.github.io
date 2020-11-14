@@ -11,6 +11,14 @@
         <li *ngFor="let e of navElements" class="nav-item">
           <a class="nav-link" routerLink="{{e.path}}" routerLinkActive="active">{{e.name}}</a>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Other
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a *ngFor="let de of dropdownNavElements" class="nav-link" routerLink="{{de.path}}" routerLinkActive="active">{{de.name}}</a>
+          </div>
+        </li>
       </ul>
     </div>
   </div>

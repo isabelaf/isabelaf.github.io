@@ -27,6 +27,11 @@ const routes: Routes = [
     component: PortofolioComponent,
     data: { title: 'Portofolio' }
   },
+  {
+    path: '-',
+    component: EmptyPageComponent,
+    data: { title: '-' }
+  },
   { 
     path: '**', 
     component: EmptyPageComponent

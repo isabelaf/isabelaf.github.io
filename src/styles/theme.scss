@@ -51,6 +51,11 @@ a {
         color: $navbar-theme-active;
       }
     }
+
+    .dropdown-menu {
+      border: none;
+      background-color: $navbar-theme-bg;
+    }
   }
 
   .navbar-toggler {

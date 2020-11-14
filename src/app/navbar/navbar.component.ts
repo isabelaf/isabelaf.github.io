@@ -8,6 +8,7 @@ import { NavElement } from '../models/nav-element.model';
 })
 export class NavbarComponent implements OnInit {
   navElements: NavElement[] = [];
+  dropdownNavElements: NavElement[] = [];
 
   ngOnInit(): void {
     this.navElements = [
@@ -24,5 +25,11 @@ export class NavbarComponent implements OnInit {
         name: 'Portofolio',
       }
     ];
+    this.dropdownNavElements = [
+      {
+        path: '/-',
+        name: '-'
+      }
+    ]
   }
 }
