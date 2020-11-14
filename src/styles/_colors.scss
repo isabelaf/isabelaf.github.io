@@ -1,8 +1,12 @@
 $theme-color-dark: $gray-900;
 $theme-color-light: $gray-400;
+$theme-color-element: rgba($white, .5);
+
 $theme-text-dark: $gray-900;
 $theme-text-light: $white;
-$theme-color-element: rgba($white, .5);
+
+$theme-link: #003e80;
+$theme-link-hover: hover-color($theme-link);
 
 $navbar-theme-bg: $theme-color-dark;
 $navbar-theme-hover: hover-color($white);

@@ -1,11 +1,13 @@
-<div *ngIf="!isValidRoute" class="empty-page-container">
+<div class="empty-page-container">
+  <div *ngIf="!isValidRoute">
   <h1 class="text-danger">
     404
   </h1>
   <h2>
     Page not found!
   </h2>
-</div>
-<div *ngIf="isValidRoute" class="empty-page-container">
+  </div>
+  <div *ngIf="isValidRoute">
   <h1>Work in progress. <i class="fas fa-pencil-ruler"></i></h1>
+  </div>
 </div>

@@ -8,7 +8,7 @@ import { DataService } from '../services/data.service';
   templateUrl: './projects.component.html'
 })
 export class ProjectsComponent implements OnInit {
-  technologies = [];
+  technologies: Map<string, Boolean> = new Map<string, Boolean>();
   projects: Project[] = [];
   showAllTechnologies = true;
 
@@ -18,7 +18,7 @@ export class ProjectsComponent implements OnInit {
     this.dataService.getTechnologies().subscribe(
       technologies => {
         technologies.forEach(t => {
-          this.technologies.push({ name: t, isSelected: false });
+          this.technologies.set(t, false);
         })
       }
     );
@@ -30,15 +30,28 @@ export class ProjectsComponent implements OnInit {
     );
   }
 
-  selectUnselectTechnology(technology) {
-    technology.isSelected = !technology.isSelected;
-    this.showAllTechnologies = this.technologies.find(t => t.isSelected) == undefined;
+  selectUnselectTechnology(technology: string) {
+    this.technologies.set(technology, !this.technologies.get(technology));
+
+    this.showAllTechnologies = true;
+    this.technologies.forEach(selected => {
+      if (selected) {
+        this.showAllTechnologies = false;
+        return;
+      }
+    });
   }
 
   selectAllTechnologies() {
     this.showAllTechnologies = true;
-    this.technologies.forEach(t => {
-      t.isSelected = false;
+    this.technologies.forEach((_, t) => {
+      this.technologies.set(t, false);
     });
+  }
+
+  showProject(project: Project): Boolean {
+    if (this.showAllTechnologies)
+      return true;
+    return project.implementation.find(i => this.technologies.get(i)) !== undefined;
   }
 }

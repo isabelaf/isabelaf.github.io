@@ -3,5 +3,5 @@ export class Project {
   description: string;
   implementation: string[];
   gitRepo: string;
-  data: Map<string, string>
+  links: Map<string, string>
 }

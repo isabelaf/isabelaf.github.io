@@ -7,22 +7,12 @@
 }
 
 app-home {
-    .icon {
-        @extend .m-2;
+    .contact-icon {
         font-size: $font-size-ex-lg;
         color: $theme-color-dark;
-        transition: opacity $transition-time, transform $transition-time;
     }
 
     @media (hover: hover) {
-        .icon:hover {
-            opacity: $hover-opacity;
-        }
-
-        .social-media:hover {
-            transform: scale(1.5);
-        }
-
         .map-pin:hover {
             transform: rotate(360deg);
         }
@@ -44,28 +34,46 @@ app-portofolio {
 
 app-projects {
     .technology {
+        @extend .link;
         @extend .mr-5;
 
-        color: #003e80;
-
-        &:hover {
-            color: hover-color(#003e80);
-        }
-
         &.active {
-            font-weight: 900;
+            font-weight: bold;
+        }
+    }
 
-            &:hover {
-                color: #003e80;
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+
+        .project {
+            @extend .mt-3;
+            word-wrap: break-word;
+            width: 20rem;
+
+            .project-title {
+                color: $theme-text-light;
+                font-size: $font-size-lg;
+                font-weight: bold;
+            }
+
+            .project-implementation {
+                color: $theme-link;
+            }
+
+            .project-link {
+                margin-left: 0;
             }
         }
     }
 }
 
 app-empty-page {
-    .empty-page-container {
-        @extend .d-flex;
-        @extend .flex-column;
-        @extend .align-items-center;
+    .empty-page-container > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

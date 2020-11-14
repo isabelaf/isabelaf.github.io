@@ -32,12 +32,12 @@
           <div class="card-body card-body-theme">
             You can find me on:<br />
             <a *ngFor="let sm of details.contact.socialMedia" target="_blank" href="{{sm.url}}" class="text-decoration-none">
-              <i class="{{sm.iconClass}} icon social-media"></i>
+              <i class="{{sm.iconClass}} contact-icon list-icon list-icon-scale"></i>
             </a>
             <br />
             You can also find me here:<br />
             <a *ngFor="let a of details.contact.address" target="_blank" href="{{a}}" class="text-decoration-none">
-              <i class="fas fa-map-marker-alt icon map-pin"></i>
+              <i class="fas fa-map-marker-alt contact-icon list-icon map-pin"></i>
             </a>
           </div>
         </div>

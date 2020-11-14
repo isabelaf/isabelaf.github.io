@@ -4,9 +4,37 @@
       all
     </button>
   </li>
-  <li *ngFor="let t of technologies" class="list-inline-item">
-    <button class="btn-theme technology" [ngClass]="{'active': t.isSelected}" (click)="selectUnselectTechnology(t)">
-      {{t.name}}
+  <li *ngFor="let t of technologies | keyvalue" class="list-inline-item">
+    <button class="btn-theme technology" [ngClass]="{'active': t.value}" (click)="selectUnselectTechnology(t.key)">
+      {{t.key}}
     </button>
   </li>
 </ul>
+
+<div class="projects-container">
+  <div *ngFor="let p of projects">
+    <div *ngIf="showProject(p)" class="project card card-theme">
+      <div class="card-header card-header-theme project-title">{{p.name}}</div>
+      <div>
+        <div class="card-body card-body-theme">
+          <div class="project-description" [innerHtml]="p.description"></div>
+          <div class="project-implementation">
+            <span *ngFor="let i of p.implementation; let last = last">{{i}}<span *ngIf="!last">, </span></span>
+          </div>
+          <div>
+            <span>
+              <a href="{{p.gitRepo}}" target="_blank">
+                <i class="fas fa-code-branch list-icon list-icon-scale project-link" data-toggle="tooltip" data-placement="top" title="git repo"></i>
+              </a>
+            </span>
+            <span *ngFor="let l of p.links | keyvalue">
+              <a href="{{l.value}}" target="_blank">
+                <i class="fas fa-external-link-alt list-icon list-icon-scale project-link" data-toggle="tooltip" data-placement="top" title="{{l.key}}"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

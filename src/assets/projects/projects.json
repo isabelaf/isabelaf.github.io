@@ -1,52 +1,56 @@
 [
   {
     "name": "Website (v2)",
-    "description": "",
+    "description": "An improved version of <b>Website (v1)</b>.",
     "implementation": [
       "Angular2+",
       "Bootstrap",
       "SCSS"
     ],
-    "gitRepo": "",
-    "data": {}
+    "gitRepo": "https://github.com/isabelaf/isabelaf.github.io",
+    "links": {
+      "website": "https://isabelaf.github.io"
+    }
   },
   {
     "name": "FightGame",
-    "description": "",
+    "description": "A two-player fighting game I've created as an assignment for my Game Development course during the 6th semester of BC studies.",
     "implementation": [
       "C#",
       "Unity"
     ],
     "gitRepo": "https://github.com/isabelaf/GD_Assessment",
-    "data": {}
+    "links": {}
   },
   {
     "name": "Website (v1)",
-    "description": "",
+    "description": "A small website I've created in order to practice with HTML, CSS & JavaScript.",
     "implementation": [
       "HTML, CSS & JavaScript"
     ],
-    "gitRepo": "https://isabelaf.github.io/_v1/index.html",
-    "data": {}
+    "gitRepo": "https://github.com/isabelaf/isabelaf.github.io",
+    "links": {
+      "website": "https://isabelaf.github.io/_v1/index.html"
+    }
   },
   {
     "name": "ChatApplication",
-    "description": "",
+    "description": "A chat application I've created in order to practice with Qt, during the 2nd semester of BC studies.",
     "implementation": [
       "C++",
       "Qt"
     ],
     "gitRepo": "https://github.com/isabelaf/ChatApplication",
-    "data": {}
+    "links": {}
   },
   {
     "name": "FlyAdventure",
-    "description": "",
+    "description": "A small game I've created for obtaining my CS certificate in 12th grade.",
     "implementation": [
       "C#",
       "Windows Forms"
     ],
     "gitRepo": "https://github.com/isabelaf/FlyAdventure",
-    "data": {}
+    "links": {}
   }
  ]
