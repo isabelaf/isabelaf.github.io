@@ -59,6 +59,19 @@ app-projects {
                 font-weight: bold;
             }
 
+            .project-thumbnail {
+                padding: 0;
+                cursor: pointer;
+            }
+
+            .project-no-thumbnail {
+                font-size: $font-size-ex-lg;
+            }
+
+            .project-description {
+                @extend .mt-2;
+            }
+
             .project-implementation {
                 color: $theme-link;
             }

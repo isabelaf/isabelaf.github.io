@@ -137,19 +137,3 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: $theme-color-dark;
 }
-
-.list-icon {
-  @extend .m-2;
-  font-size: $font-size-lg;
-  transition: opacity $transition-time, transform $transition-time;
-}
-
-@media (hover: hover) {
-  .list-icon:hover {
-    opacity: $hover-opacity;
-  }
-
-  .list-icon-scale:hover {
-    transform: scale(1.5);
-  }
-}

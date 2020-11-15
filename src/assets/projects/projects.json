@@ -10,7 +10,8 @@
     "gitRepo": "https://github.com/isabelaf/isabelaf.github.io",
     "links": {
       "website": "https://isabelaf.github.io"
-    }
+    },
+    "thumbnailPhoto": ""
   },
   {
     "name": "FightGame",
@@ -20,7 +21,8 @@
       "Unity"
     ],
     "gitRepo": "https://github.com/isabelaf/GD_Assessment",
-    "links": {}
+    "links": {},
+    "thumbnailPhoto": ""
   },
   {
     "name": "Website (v1)",
@@ -31,7 +33,8 @@
     "gitRepo": "https://github.com/isabelaf/isabelaf.github.io",
     "links": {
       "website": "https://isabelaf.github.io/_v1/index.html"
-    }
+    },
+    "thumbnailPhoto": ""
   },
   {
     "name": "ChatApplication",
@@ -41,7 +44,8 @@
       "Qt"
     ],
     "gitRepo": "https://github.com/isabelaf/ChatApplication",
-    "links": {}
+    "links": {},
+    "thumbnailPhoto": "../../assets/projects/project-ChatApplication-thumbnail.png"
   },
   {
     "name": "FlyAdventure",
@@ -51,6 +55,7 @@
       "Windows Forms"
     ],
     "gitRepo": "https://github.com/isabelaf/FlyAdventure",
-    "links": {}
+    "links": {},
+    "thumbnailPhoto": "../../assets/projects/project-FlyAdventure-thumbnail.png"
   }
  ]

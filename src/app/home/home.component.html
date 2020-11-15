@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-sm-6">
-    <div id="">
-      [photo]
+    <div class="px-3 pb-3">
+      <img class="img-fluid" src="../../assets/data/photo.JPG">
     </div>
   </div>
 
@@ -32,7 +32,7 @@
           <div class="card-body card-body-theme">
             You can find me on:<br />
             <a *ngFor="let sm of details.contact.socialMedia" target="_blank" href="{{sm.url}}" class="text-decoration-none">
-              <i class="{{sm.iconClass}} contact-icon list-icon list-icon-scale"></i>
+              <i class="{{sm.iconClass}} contact-icon list-icon hover-scale"></i>
             </a>
             <br />
             You can also find me here:<br />

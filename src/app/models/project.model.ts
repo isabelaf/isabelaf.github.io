@@ -3,5 +3,6 @@ export class Project {
   description: string;
   implementation: string[];
   gitRepo: string;
-  links: Map<string, string>
+  links: Map<string, string>;
+  thumbnailPhoto: string;
 }

@@ -17,6 +17,8 @@
       <div class="card-header card-header-theme project-title">{{p.name}}</div>
       <div>
         <div class="card-body card-body-theme">
+          <img *ngIf="p.thumbnailPhoto" class="img-thumbnail project-thumbnail hover-scale" src="{{p.thumbnailPhoto}}">
+          <i *ngIf="!p.thumbnailPhoto" class="far fa-image project-no-thumbnail"></i>
           <div class="project-description" [innerHtml]="p.description"></div>
           <div class="project-implementation">
             <span *ngFor="let i of p.implementation; let last = last">{{i}}<span *ngIf="!last">, </span></span>
@@ -24,12 +26,12 @@
           <div>
             <span>
               <a href="{{p.gitRepo}}" target="_blank">
-                <i class="fas fa-code-branch list-icon list-icon-scale project-link" data-toggle="tooltip" data-placement="top" title="git repo"></i>
+                <i class="fas fa-code-branch list-icon hover-scale project-link" data-toggle="tooltip" data-placement="top" title="git repo"></i>
               </a>
             </span>
             <span *ngFor="let l of p.links | keyvalue">
               <a href="{{l.value}}" target="_blank">
-                <i class="fas fa-external-link-alt list-icon list-icon-scale project-link" data-toggle="tooltip" data-placement="top" title="{{l.key}}"></i>
+                <i class="fas fa-external-link-alt list-icon hover-scale project-link" data-toggle="tooltip" data-placement="top" title="{{l.key}}"></i>
               </a>
             </span>
           </div>
