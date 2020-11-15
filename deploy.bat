@@ -1,0 +1,1 @@
+ng build --prod && npx angular-cli-ghpages --dir=dist/isabelaf-github-io
