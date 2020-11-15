@@ -16,5 +16,5 @@ export class DetailsContact {
 
 export class Details {
   about: DetailsAbout;
-  contact: DetailsContact
+  contact: DetailsContact;
 }

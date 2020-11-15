@@ -11,11 +11,11 @@ import { Project } from '../models/project.model';
 @Injectable()
 export class DataService {
   constructor(private httpClient: HttpClient) {
-  };
+  }
 
   getDetails(): Observable<Details> {
     return this.httpClient.get<Details>('/assets/data/details.json');
-  };
+  }
 
   getTechnologies(): Observable<string[]> {
     return this.httpClient.get<string[]>('/assets/projects/technologies.json');

@@ -12,9 +12,9 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  { 
-    path: 'home', 
-    component: HomeComponent, 
+  {
+    path: 'home',
+    component: HomeComponent,
     data: { title: 'Home' }
   },
   {
@@ -32,8 +32,8 @@ const routes: Routes = [
     component: EmptyPageComponent,
     data: { title: '-' }
   },
-  { 
-    path: '**', 
+  {
+    path: '**',
     component: EmptyPageComponent
   }
 ];

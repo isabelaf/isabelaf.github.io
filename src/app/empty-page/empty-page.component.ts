@@ -8,11 +8,11 @@ import { AppConstants } from '../app.constants';
   templateUrl: './empty-page.component.html'
 })
 export class EmptyPageComponent implements OnInit {
-  isValidRoute: boolean = false;
+  isValidRoute = false;
 
   constructor(private titleService: Title) {}
 
   ngOnInit(): void {
-    this.isValidRoute = this.titleService.getTitle() != AppConstants.notFoundTitle;
+    this.isValidRoute = this.titleService.getTitle() !== AppConstants.notFoundTitle;
   }
 }

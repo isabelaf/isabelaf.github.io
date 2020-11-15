@@ -23,10 +23,9 @@ export class AppComponent implements OnInit {
           if (child) {
             while (child.firstChild)
               child = child.firstChild;
-            if (child.snapshot.data['title'])
-              return child.snapshot.data['title'];
+            if (child.snapshot.data.title)
+              return child.snapshot.data.title;
           }
-          
           return AppConstants.notFoundTitle;
         })
       )
