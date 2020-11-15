@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<title>My Apps</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		
+		<link href="./favicon.ico" rel="icon" >
+		
+		<link href="./styles/style.css" type="text/css" rel="stylesheet">
+		<link href="./styles/apps.css" type="text/css" rel="stylesheet">
+		
+		<script src="./scripts/main.js"></script>
+		
+	</head>
+	
+	<body>
+		
+		<!-- <div class="background" id="left"></div>
+		<div class="background" id="center"></div>
+		<div class="background" id="right"></div> -->
+		
+		<div id="modal">
+			<div id="close" onclick="closeModal()">&times;</div>
+			<div id="prev">&#10094;</div>
+			<div id="next">&#10095;</div>
+			<div id="modal-content">
+				<div id="modal-photo"></div>
+				<p id="modal-page"></p>
+				<p id="modal-description"></p>
+			</div>
+		</div>
+		
+		<a href="#"><i class="fas fa-arrow-circle-up" id="to-top"></i></a>
+		
+		<div id="navbar">
+			<ul>
+				<li><a href="index.html" class="navbar-item">Home</a></li>
+				<li><a href="apps.html" class="navbar-item navbar-active">My Apps</a></li>
+				<li><a href="info.html" class="navbar-item">Info</a></li>
+			</ul>
+		</div>
+		
+		<div class="content">
+		
+			<div class="container">
+				<h2>Keywords</h2>
+				<ul>
+					<li class="keyword-link active" onclick="highlight(this, 'all')">all</li>
+					<li class="keyword-link" onclick="highlight(this, 'csharp')">C#</li>
+					<li class="keyword-link not" onclick="highlight(this, '')">Python</li>
+					<li class="keyword-link" onclick="highlight(this, 'cplusplus')">C++</li>
+					<li class="keyword-link" onclick="highlight(this, 'qt')">Qt</li>
+					<li class="keyword-link not" onclick="highlight(this, '')">HTML</li>
+					<li class="keyword-link not" onclick="highlight(this, '')">CSS</li>
+					<li class="keyword-link not" onclick="highlight(this, '')">Java</li>
+				</ul>
+			</div>
+		
+			<div class="container grid">
+				
+				<div class="container app csharp">
+				
+					<h2>FlyAdventure</h2>
+					<div style="background-image: url(./images/apps/app-FlyAdventure-thumbnail-0.jpg)" id="app-FlyAdventure" class="app-thumbnail" onclick="showModal('app-FlyAdventure', 8)" onmouseenter="thumbnailAnimation('app-FlyAdventure', 3)">
+					</div>
+					<div class="app-info">
+						<p class="app-description">
+							A little game developed using 
+							<span class="keyword">C#</span> 
+							(Windows Forms Application) for obtaining my Computer Science Certificate.
+							<br />
+							GitHub code:
+							<a href="https://github.com/isabelaf/FlyAdventure" target="_blank"><i class="fas fa-code-branch"></i></a>
+						</p>
+						<div class="read-more-less">
+							<p class="link" onclick="readMoreLess('app-FlyAdventure')">Read more</p>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="container app cplusplus qt">
+					<h2>ChatApplication</h2>
+					<div style="background-image: url(./images/apps/app-ChatApplication-thumbnail-0.jpg)" id="app-ChatApplication" class="app-thumbnail" onclick="showModal('app-ChatApplication', 14)" onmouseenter="thumbnailAnimation('app-ChatApplication', 3)">
+					</div>
+					<div class="app-info">
+						<p class="app-description">
+							I developed a chat application
+							(<span class="keyword">C++</span> & <span class="keyword">Qt</span>)
+							in order to practice with the Observer pattern.
+							<br />
+							GitHub code:
+							<a href="https://github.com/isabelaf/ChatApplication" target="_blank"><i class="fas fa-code-branch"></i></a>
+						</p>
+						<div class="read-more-less">
+							<p class="link" onclick="readMoreLess('app-ChatApplication')">Read more</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<footer id="footer">
+				<hr></hr>
+				<p>
+					Author: Isabela Fitero - <a href="mailto:isabelafitero@gmail.com" class="link">isabelafitero [at] gmail.com</a><br />
+					Created: December 2018<br />
+					<a href="./info.html#contact" class="link">Contact</a>
+				</p>
+				<p><br /></p>
+				<p>
+					<a>Version 2</a>
+					<!-- <a href="../index.html">Version 2</a> -->
+				</p>
+			</footer>
+		
+		</div>
+		
+	</body>
+	
+</html>
