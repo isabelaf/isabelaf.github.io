@@ -12,12 +12,12 @@
   transition: transform $transition-time;
 }
   
-  @media (hover: hover) {
-    .list-icon:hover {
-      opacity: $hover-opacity;
-    }
-  
-    .hover-scale:hover {
-      transform: scale(1.5);
-    }
+@media (hover: hover) {
+  .list-icon:hover {
+    opacity: $hover-opacity;
   }
+
+  .hover-scale:hover {
+    transform: scale(1.5);
+  }
+}

@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
     );
   }
 
-  selectUnselectTechnology(technology: string) {
+  selectUnselectTechnology(technology: string): void {
     this.technologies.set(technology, !this.technologies.get(technology));
 
     this.showAllTechnologies = true;
@@ -42,7 +42,7 @@ export class ProjectsComponent implements OnInit {
     });
   }
 
-  selectAllTechnologies() {
+  selectAllTechnologies(): void {
     this.showAllTechnologies = true;
     this.technologies.forEach((_, t) => {
       this.technologies.set(t, false);

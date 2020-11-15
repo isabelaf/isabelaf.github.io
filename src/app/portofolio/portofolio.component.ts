@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 export class PortofolioComponent {
   src: string = '../../assets/data/portofolio.pdf';
 
-  textLayerRendered() {
+  textLayerRendered(): void {
     const pdfReport = document.getElementById('pdf-viewer');
     let externalLinks: HTMLCollectionOf<HTMLAnchorElement>;
 

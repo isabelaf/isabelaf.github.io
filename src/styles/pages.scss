@@ -1,92 +1,92 @@
 .go-top-btn {
-    @extend .mb-3;
-    @extend .ml-3;
-    bottom: 0;
-    left: 0;
-    position: fixed;
+  @extend .mb-3;
+  @extend .ml-3;
+  bottom: 0;
+  left: 0;
+  position: fixed;
 }
 
 app-home {
-    .contact-icon {
-        font-size: $font-size-ex-lg;
-        color: $theme-color-dark;
-    }
+  .contact-icon {
+    font-size: $font-size-ex-lg;
+    color: $theme-color-dark;
+  }
 
-    @media (hover: hover) {
-        .map-pin:hover {
-            transform: rotate(360deg);
-        }
+  @media (hover: hover) {
+    .map-pin:hover {
+        transform: rotate(360deg);
     }
+  }
 }
 
 app-portofolio {
-    .pdf-viewer-container {
-        max-height: 90vh;
-        overflow-y: auto;
-        width: 70%;
-        margin-left: 15%;
-    }
+  .pdf-viewer-container {
+    max-height: 90vh;
+    overflow-y: auto;
+    width: 70%;
+    margin-left: 15%;
+  }
 
-    pdf-viewer {
-        display: block;
-    }
+  pdf-viewer {
+    display: block;
+  }
 }
 
 app-projects {
-    .technology {
-        @extend .link;
-        @extend .mr-5;
+  .technology {
+    @extend .link;
+    @extend .mr-5;
 
-        &.active {
-            font-weight: bold;
-        }
+    &.active {
+      font-weight: bold;
     }
+  }
 
-    .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        justify-content: space-between;
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
 
-        .project {
-            @extend .mt-3;
-            word-wrap: break-word;
-            width: 20rem;
+    .project {
+      @extend .mt-3;
+      word-wrap: break-word;
+      width: 20rem;
 
-            .project-title {
-                color: $theme-text-light;
-                font-size: $font-size-lg;
-                font-weight: bold;
-            }
+      .project-title {
+        color: $theme-text-light;
+        font-size: $font-size-lg;
+        font-weight: bold;
+      }
 
-            .project-thumbnail {
-                padding: 0;
-                cursor: pointer;
-            }
+      .project-thumbnail {
+        padding: 0;
+        cursor: pointer;
+      }
 
-            .project-no-thumbnail {
-                font-size: $font-size-ex-lg;
-            }
+      .project-no-thumbnail {
+        font-size: $font-size-ex-lg;
+      }
 
-            .project-description {
-                @extend .mt-2;
-            }
+      .project-description {
+        @extend .mt-2;
+      }
 
-            .project-implementation {
-                color: $theme-link;
-            }
+      .project-implementation {
+        color: $theme-link;
+      }
 
-            .project-link {
-                margin-left: 0;
-            }
-        }
+      .project-link {
+        margin-left: 0;
+      }
     }
+  }
 }
 
 app-empty-page {
-    .empty-page-container > div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .empty-page-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
