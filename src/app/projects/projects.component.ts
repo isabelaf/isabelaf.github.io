@@ -9,8 +9,10 @@ import { DataService } from '../services/data.service';
 })
 export class ProjectsComponent implements OnInit {
   technologies: Map<string, Boolean> = new Map<string, Boolean>();
-  projects: Project[] = [];
   showAllTechnologies = true;
+
+  projects: Project[] = [];
+  private allProjects: Project[] = [];
 
   constructor(private dataService: DataService) {}
 
@@ -25,7 +27,8 @@ export class ProjectsComponent implements OnInit {
 
     this.dataService.getProjects().subscribe(
       projects => {
-        this.projects = projects;
+        this.allProjects = projects;
+        this.filterProjects();
       }
     );
   }
@@ -40,6 +43,8 @@ export class ProjectsComponent implements OnInit {
         return;
       }
     });
+
+    this.filterProjects();
   }
 
   selectAllTechnologies(): void {
@@ -47,9 +52,15 @@ export class ProjectsComponent implements OnInit {
     this.technologies.forEach((_, t) => {
       this.technologies.set(t, false);
     });
+
+    this.filterProjects();
   }
 
-  showProject(project: Project): Boolean {
+  private filterProjects(): void {
+    this.projects = this.allProjects.filter(p => this.showProject(p));
+  }
+
+  private showProject(project: Project): Boolean {
     if (this.showAllTechnologies)
       return true;
     return project.implementation.find(i => this.technologies.get(i)) !== undefined;

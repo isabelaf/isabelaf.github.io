@@ -12,9 +12,13 @@ app-home {
     color: $theme-color-dark;
   }
 
+  .map-pin {
+    transition: transform $transition-time;
+  }
+
   @media (hover: hover) {
     .map-pin:hover {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
   }
 }
@@ -29,6 +33,13 @@ app-portofolio {
 
   pdf-viewer {
     display: block;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .pdf-viewer-container {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 }
 
@@ -61,7 +72,6 @@ app-projects {
 
       .project-thumbnail {
         padding: 0;
-        cursor: pointer;
       }
 
       .project-no-thumbnail {

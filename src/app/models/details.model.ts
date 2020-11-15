@@ -6,6 +6,7 @@ export class DetailsAbout {
 export class DetailsSocialMedia {
   url: string;
   iconClass: string;
+  tooltip: string;
 }
 
 export class DetailsContact {

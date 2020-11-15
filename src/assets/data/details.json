@@ -7,15 +7,23 @@
     "socialMedia": [
       {
         "url": "https://www.linkedin.com/in/isabela-fitero",
-        "iconClass": "fab fa-linkedin"
+        "iconClass": "fab fa-linkedin",
+        "tooltip": "LinkedIn"
       },
       {
         "url": "https://github.com/isabelaf",
-        "iconClass": "fab fa-github"
+        "iconClass": "fab fa-github",
+        "tooltip": "GitHub"
+      },
+      {
+        "url": "https://europa.eu/!Uv38up",
+        "iconClass": "fas fa-user-circle",
+        "tooltip": "Europass"
       },
       {
         "url": "mailto:isabelafitero@gmail.com",
-        "iconClass": "fas fa-envelope"
+        "iconClass": "fas fa-envelope",
+        "tooltip": "Gmail"
       }
     ],
     "address": [

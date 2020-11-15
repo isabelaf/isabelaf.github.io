@@ -32,7 +32,7 @@
           <div class="card-body card-body-theme">
             You can find me on:<br />
             <a *ngFor="let sm of details.contact.socialMedia" target="_blank" href="{{sm.url}}" class="text-decoration-none">
-              <i class="{{sm.iconClass}} contact-icon list-icon hover-scale"></i>
+              <i class="{{sm.iconClass}} contact-icon list-icon hover-scale" data-toggle="tooltip" title="{{sm.tooltip}}"></i>
             </a>
             <br />
             You can also find me here:<br />

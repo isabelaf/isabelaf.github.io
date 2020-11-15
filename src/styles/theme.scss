@@ -65,11 +65,11 @@ a {
 }
 
 .container-theme {
-  @extend .vh-100;
   @extend .position-relative;
   @extend .px-0;
   @extend .pt-5;
-
+  
+  min-height: 85vh;
   color: $theme-text-dark;
 }
 
@@ -79,7 +79,6 @@ a {
 
   text-align: center;
   width: 100%;
-  // position: absolute;
   bottom: 0;
 
   hr {
